@@ -73,6 +73,8 @@
   83\% more error than total uncertainty for the same expert labels, though simply
   escalating the least-labelled items does as well there. We demonstrate we can estimate where a judge is ignorant rather than where
   experts genuinely disagree, and propose using this to direct expert labelling.
+  Code and data are available at
+  \url{https://github.com/composo-ai/judge-uncertainty-decomposition}.
 \end{abstract}
 
 %% STRUCTURE (updated per second review \S3.5): structure A's spine, with the confidence
@@ -179,8 +181,7 @@ come apart, up to full inversion (App.~\ref{app:model}).
 \label{sec:setup}
 
 Two experiments share one real LLM judge, Azure OpenAI's \texttt{gpt-5.6-terra},
-queried 18 August 2026.\footnote{Code, data, both raw judge caches, and the
-pre-registration records: \url{https://github.com/composo-ai/judge-uncertainty-decomposition}.}
+queried 18 August 2026.
 
 \paragraph{Experiment 1: dice (exactly known truth).}
 500 three-sided dice with biases $p_i$ carry descriptions in four tiers (none,
