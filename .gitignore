@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+# ChaosNLI is CC BY-NC 4.0 and is downloaded, not vendored (see README)
+data/
+# Regenerated sweep outputs
+results/

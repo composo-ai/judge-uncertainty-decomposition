@@ -1,0 +1,9 @@
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.11.1
+pytest==9.1.1
+# Only needed to re-query the judges (the committed caches make this optional)
+openai==3.8.0
+anthropic==1.4.0
+# Only needed to regenerate chaosnli/embeddings_minilm.npz (see chaosnli/embed.py)
+# sentence-transformers
