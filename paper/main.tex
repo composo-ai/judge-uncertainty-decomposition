@@ -1,14 +1,17 @@
 %% Decomposing LLM-Judge Uncertainty to Target Expert Labels
 %%
-%% Source of the submitted 4-page paper (JUDGe poster track / TAE, NeurIPS 2026 workshops).
+%% Decomposing LLM-Judge Uncertainty to Target Expert Labels -- preprint build.
+%% submitted.pdf is the anonymised 4-page version as submitted to the NeurIPS 2026
+%% workshops (JUDGe poster track / TAE) on 29 Aug 2026; this source differs from it only
+%% in the [preprint] option, the author block, and the code-repository footnote.
 %%
 %% Build: make -C paper
 
 \documentclass{article}
 
-%% Both target venues are double-blind, so dblblindworkshop is correct for the
-%% submission. Switch to "final" for the camera-ready.
-\usepackage[dblblindworkshop]{neurips_2026}
+%% [preprint] shows the authors and prints "Preprint." in the footer. The submission used
+%% [dblblindworkshop]; the camera-ready uses [final] with the accepted venue's \workshoptitle.
+\usepackage[preprint]{neurips_2026}
 
 %% Required alongside \title for the workshop templates: sets the footnote on page 1.
 %% One draft, two submissions -- set per venue build at submission time:
@@ -47,13 +50,10 @@
 
 \title{Decomposing LLM-Judge Uncertainty to Target Expert Labels}
 
-%% Author block is suppressed automatically under double-blind submission; the style file
-%% substitutes "Anonymous Author(s)". Fill in for the camera-ready only.
 \author{%
-  Anonymous Author(s) \\
-  Affiliation \\
-  Address \\
-  \texttt{email} \\
+  Ryan Lail \\
+  Composo AI \\
+  \texttt{ryan@composo.ai} \\
 }
 
 \begin{document}
@@ -179,7 +179,8 @@ come apart, up to full inversion (App.~\ref{app:model}).
 \label{sec:setup}
 
 Two experiments share one real LLM judge, Azure OpenAI's \texttt{gpt-5.6-terra},
-queried 18 August 2026.
+queried 18 August 2026.\footnote{Code, data, both raw judge caches, and the
+pre-registration records: \url{https://github.com/composo-ai/judge-uncertainty-decomposition}.}
 
 \paragraph{Experiment 1: dice (exactly known truth).}
 500 three-sided dice with biases $p_i$ carry descriptions in four tiers (none,

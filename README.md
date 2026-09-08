@@ -20,8 +20,9 @@ no sampling and no further judge calls.
   estimate removes 83% more error than ranking by total uncertainty for the same expert
   labels, though simply escalating the least-labelled items does as well there.
 
-**Paper:** [`paper/main.pdf`](paper/main.pdf) (4-page workshop version, NeurIPS 2026 workshops;
-source in [`paper/`](paper/)).
+**Paper:** [`paper/main.pdf`](paper/main.pdf), the preprint. [`paper/submitted.pdf`](paper/submitted.pdf)
+is the anonymised 4-page version as submitted to the NeurIPS 2026 workshops on 29 August 2026;
+the source in [`paper/`](paper/) builds the preprint.
 
 This repository holds everything needed to reproduce the paper: the synthetic dice testbed,
 the ChaosNLI pipeline, both raw judge caches, the pre-registration documents, the gate
@@ -38,7 +39,7 @@ scripts that scored them, and the figures.
 | `chaosnli/caches/judge_cache.jsonl` | Raw outputs of the judge on all 3,113 ChaosNLI items (Experiment 2): 12,452 rows, four prompt variants per item. |
 | `chaosnli/embeddings_minilm.npz` | MiniLM item embeddings used for the familiarity features. `chaosnli/embed.py` regenerates it. |
 | `chaosnli/registered_report.json` | Raw numbers behind `chaosnli/RESULTS.md`. |
-| `paper/` | LaTeX source, bibliography, style file, the submitted PDF, and `gate.py`, the content-protection checks run on every edit of the submission. |
+| `paper/` | LaTeX source, bibliography, style file, the preprint (`main.pdf`) and the submitted anonymised PDF (`submitted.pdf`), and `gate.py`, the content-protection checks run on every edit. |
 | `docs/experiments_synthetic_dice.md` | Implementation spec for the dice testbed, including the day-0 changelog and the pre-registered S7 predictions. It refers to some planning documents that stay internal; the pre-registered content that the paper relies on is in this file, `chaosnli/PREREG.md`, and the two gate scripts. |
 
 ## Setup
