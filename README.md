@@ -11,7 +11,7 @@ pool, which more labels cannot reduce, and **epistemic**, the judge's ignorance 
 experts would say, which even one label reduces. A small Bayesian model separates them: a
 regression on the labels already collected learns how far to trust a black-box judge's
 prediction on each item, and both components then follow as closed-form expressions, with
-no sampling and no further judge calls.
+no sampling and no further judge calls. 
 
 - On a real LLM judge scored against exactly known truth (500 three-sided dice), the two
   estimated components isolate: estimated aleatoric tracks the true disagreement and not the
