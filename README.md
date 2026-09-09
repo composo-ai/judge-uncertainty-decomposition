@@ -20,8 +20,7 @@ no sampling and no further judge calls.
   estimate removes 83% more error than ranking by total uncertainty for the same expert
   labels, though simply escalating the least-labelled items does as well there.
 
-**Paper:** *Decomposing LLM-Judge Uncertainty to Target Expert Labels*, submitted to the
-NeurIPS 2026 workshops (4-page version). Preprint link to follow.
+**Paper:** [Decomposing LLM-Judge Uncertainty to Target Expert Labels](https://arxiv.org/abs/2609.06444) (arXiv:2609.06444)
 
 This repository holds everything needed to reproduce the paper: the synthetic dice testbed,
 the ChaosNLI pipeline, both raw judge caches, the pre-registration documents, the gate
@@ -133,11 +132,13 @@ missed, `chaosnli/RESULTS.md` says so and labels the later analysis as explorato
 ## Citation
 
 ```bibtex
-@inproceedings{lail2026decomposing,
-  title     = {Decomposing LLM-Judge Uncertainty to Target Expert Labels},
-  author    = {Lail, Ryan},
-  booktitle = {NeurIPS 2026 Workshops},
-  year      = {2026},
-  url       = {https://github.com/composo-ai/judge-uncertainty-decomposition}
+@misc{lail2026decomposing,
+  title={Decomposing LLM-Judge Uncertainty to Target Expert Labels},
+  author={Lail, Ryan},
+  year={2026},
+  eprint={2609.06444},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  note={},
 }
 ```
