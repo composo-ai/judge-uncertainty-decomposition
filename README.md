@@ -1,7 +1,8 @@
 # Decomposing LLM-Judge Uncertainty to Target Expert Labels
 
 **Authors:** [Ryan Lail](https://github.com/ryanlail)<br>
-**Affiliation:** [Composo AI](https://composo.ai)
+**Affiliation:** [Composo AI](https://composo.ai)<br>
+**Paper:** [arXiv:2609.06444](https://arxiv.org/abs/2609.06444)
 
 An LLM judge evaluates outputs at scale, and human experts should label only where it is
 least sure. The judge's natural escalation signal, the spread of its predicted label
@@ -19,8 +20,6 @@ no sampling and no further judge calls.
 - On real human disagreement (ChaosNLI, 100 annotations per item), ranking by the epistemic
   estimate removes 83% more error than ranking by total uncertainty for the same expert
   labels, though simply escalating the least-labelled items does as well there.
-
-**Paper:** [Decomposing LLM-Judge Uncertainty to Target Expert Labels](https://arxiv.org/abs/2609.06444) (arXiv:2609.06444)
 
 This repository holds everything needed to reproduce the paper: the synthetic dice testbed,
 the ChaosNLI pipeline, both raw judge caches, the pre-registration documents, the gate
@@ -112,13 +111,6 @@ prompts without calling anything.
 python -m dice.llm_judge --cache dice/caches/s7b_cache.jsonl --n-dice 500 --diagnostic
 python -m chaosnli.judge --data-dir data/chaosNLI_v1.0 --cache chaosnli/caches/judge_cache.jsonl
 ```
-
-## Pre-registration
-
-The dice gate thresholds (`dice/gate.py`) and the ChaosNLI protocol and predictions
-(`chaosnli/PREREG.md`) were committed before the corresponding results were read, and the
-results files score them as written, refutations included. Where a registered prediction
-missed, `chaosnli/RESULTS.md` says so and labels the later analysis as exploratory.
 
 ## Licences
 
