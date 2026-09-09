@@ -1,0 +1,109 @@
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baan et~al.(2022)]{baan2022}
+Baan et~al.
+\newblock Stop measuring calibration when humans disagree.
+\newblock In \emph{EMNLP}, 2022.
+
+\bibitem[Bachar et~al.(2026)]{bachar2026}
+Bachar et~al.
+\newblock {LLM} performance predictors: Learning when to escalate in hybrid
+  human--{AI} moderation systems.
+\newblock In \emph{AAMAS}, 2026.
+
+\bibitem[Badshah et~al.(2026)Badshah, Emami, and Sajjad]{badshah2026}
+Badshah, Emami, and Sajjad.
+\newblock {SCOPE}: Selective conformal optimized pairwise {LLM} judging.
+\newblock In \emph{ICML}, 2026.
+\newblock arXiv:2602.13110.
+
+\bibitem[{Bickford Smith} et~al.(2023)]{bickfordsmith2023}
+{Bickford Smith} et~al.
+\newblock Prediction-oriented {B}ayesian active learning ({EPIG}).
+\newblock In \emph{AISTATS}, 2023.
+
+\bibitem[Chen et~al.(2025)]{chen2025}
+Chen et~al.
+\newblock Distributional {LLM}-as-a-judge.
+\newblock In \emph{NeurIPS}, 2025.
+
+\bibitem[Dorner et~al.(2025)Dorner, Nastl, and Hardt]{dorner2025}
+Dorner, Nastl, and Hardt.
+\newblock Limits to scalable evaluation at the frontier: {LLM} as judge won't
+  beat twice the data.
+\newblock In \emph{ICLR}, 2025.
+
+\bibitem[Dubois et~al.(2026)Dubois, Coppock, et~al.]{dubois2026}
+Dubois, Coppock, et~al.
+\newblock Quantifying biases in {LLM}-as-a-judge evaluations.
+\newblock In \emph{ICML}, 2026.
+
+\bibitem[Houlsby et~al.(2011)]{houlsby2011}
+Houlsby et~al.
+\newblock {B}ayesian active learning for classification and preference
+  learning.
+\newblock \emph{arXiv:1112.5745}, 2011.
+
+\bibitem[Jung et~al.(2025)Jung, Brahman, and Choi]{jung2025}
+Jung, Brahman, and Choi.
+\newblock Trust or escalate: {LLM} judges with provable guarantees for human
+  agreement.
+\newblock In \emph{ICLR}, 2025.
+
+\bibitem[Kotelevskii et~al.(2025)]{kotelevskii2025}
+Kotelevskii et~al.
+\newblock From risk to uncertainty: Generating predictive uncertainty measures
+  via {B}ayesian estimation.
+\newblock In \emph{ICLR}, 2025.
+
+\bibitem[Lail and Markham(2026)]{lail2026}
+Lail and Markham.
+\newblock On cost-effective {LLM}-as-a-judge improvement techniques.
+\newblock In \emph{ICML 2026 Workshop on Statistical Frameworks for Uncertainty
+  in Agentic Systems}, 2026.
+\newblock arXiv:2604.13717.
+
+\bibitem[Leonardelli et~al.(2025)]{leonardelli2025}
+Leonardelli et~al.
+\newblock {L}e{W}i{D}i-2025 at {NLP}erspectives: Third edition of the learning
+  with disagreements shared task.
+\newblock In \emph{NLPerspectives @ EMNLP}, 2025.
+\newblock arXiv:2510.08460.
+
+\bibitem[Nguyen et~al.(2019)Nguyen, Destercke, and H{\"u}llermeier]{nguyen2019}
+Nguyen, Destercke, and H{\"u}llermeier.
+\newblock Epistemic uncertainty sampling.
+\newblock In \emph{Discovery Science}, 2019.
+
+\bibitem[Nie et~al.(2020)Nie, Zhou, and Bansal]{nie2020}
+Nie, Zhou, and Bansal.
+\newblock What can we learn from collective human opinions on natural language
+  inference data?
+\newblock In \emph{EMNLP}, 2020.
+\newblock ChaosNLI.
+
+\bibitem[Plank(2022)]{plank2022}
+Plank.
+\newblock The ``problem'' of human label variation: On ground truth in data,
+  modeling and evaluation.
+\newblock In \emph{EMNLP}, 2022.
+
+\bibitem[Sheng et~al.(2025)]{sheng2025}
+Sheng et~al.
+\newblock Analyzing uncertainty of {LLM}-as-a-judge: Interval evaluations with
+  conformal prediction.
+\newblock In \emph{EMNLP}, 2025.
+\newblock arXiv:2509.18658.
+
+\bibitem[Wang et~al.(2025)Wang, Zhang, and Choi]{wang2025}
+Wang, Zhang, and Choi.
+\newblock Improving {LLM}-as-a-judge inference with the judgment distribution.
+\newblock In \emph{Findings of EMNLP}, 2025.
+\newblock arXiv:2503.03064.
+
+\end{thebibliography}

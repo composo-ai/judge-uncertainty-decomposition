@@ -20,13 +20,12 @@ no sampling and no further judge calls.
   estimate removes 83% more error than ranking by total uncertainty for the same expert
   labels, though simply escalating the least-labelled items does as well there.
 
-**Paper:** [`paper/main.pdf`](paper/main.pdf), the preprint. [`paper/submitted.pdf`](paper/submitted.pdf)
-is the anonymised 4-page version as submitted to the NeurIPS 2026 workshops on 29 August 2026;
-the source in [`paper/`](paper/) builds the preprint.
+**Paper:** *Decomposing LLM-Judge Uncertainty to Target Expert Labels*, submitted to the
+NeurIPS 2026 workshops (4-page version). Preprint link to follow.
 
 This repository holds everything needed to reproduce the paper: the synthetic dice testbed,
 the ChaosNLI pipeline, both raw judge caches, the pre-registration documents, the gate
-scripts that scored them, and the figures.
+script that scored them, and the figures.
 
 ## Layout
 
@@ -39,8 +38,7 @@ scripts that scored them, and the figures.
 | `chaosnli/caches/judge_cache.jsonl` | Raw outputs of the judge on all 3,113 ChaosNLI items (Experiment 2): 12,452 rows, four prompt variants per item. |
 | `chaosnli/embeddings_minilm.npz` | MiniLM item embeddings used for the familiarity features. `chaosnli/embed.py` regenerates it. |
 | `chaosnli/registered_report.json` | Raw numbers behind `chaosnli/RESULTS.md`. |
-| `paper/` | LaTeX source, bibliography, style file, the preprint (`main.pdf`) and the submitted anonymised PDF (`submitted.pdf`), and `gate.py`, the content-protection checks run on every edit. |
-| `docs/experiments_synthetic_dice.md` | Implementation spec for the dice testbed, including the day-0 changelog and the pre-registered S7 predictions. It refers to some planning documents that stay internal; the pre-registered content that the paper relies on is in this file, `chaosnli/PREREG.md`, and the two gate scripts. |
+| `docs/experiments_synthetic_dice.md` | Implementation spec for the dice testbed, including the day-0 changelog and the pre-registered S7 predictions. It refers to some planning documents that stay internal; the pre-registered content that the paper relies on is in this file, `chaosnli/PREREG.md`, and `dice/gate.py`. |
 
 ## Setup
 
@@ -115,11 +113,6 @@ prompts without calling anything.
 python -m dice.llm_judge --cache dice/caches/s7b_cache.jsonl --n-dice 500 --diagnostic
 python -m chaosnli.judge --data-dir data/chaosNLI_v1.0 --cache chaosnli/caches/judge_cache.jsonl
 ```
-
-### The paper
-
-`make -C paper` builds `paper/main.pdf` with a standard TeX Live install; `python3 paper/gate.py`
-(run inside `paper/`) checks the protected content against the PDF.
 
 ## Pre-registration
 

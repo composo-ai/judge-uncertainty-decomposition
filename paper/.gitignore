@@ -1,9 +1,0 @@
-# LaTeX build intermediates. main.pdf IS committed: it is what reviewers of the draft
-# open, and it is how the page count in FIT_REPORT.md can be checked without a TeX install.
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.synctex.gz
-proof/
